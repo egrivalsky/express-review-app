@@ -28,6 +28,10 @@ app.get('/form1', (req, res) => {
     res.render('form1');
 });
 
+app.get('/form2', (req, res) => {
+    res.render('form2');
+});
+
 app.get('/github', (req, res) => {
     axios.get('https://api.github.com/users/romebell')
     .then(response => {
@@ -48,11 +52,28 @@ app.get('result1', (req, res) => {
     res.render('result1');
 });
 
+app.get('result2', (req, res) => {
+    res.render('result2');
+});
+
 // POST ROUTES
 app.post('/result1', (req, res) => {
     const incomingData = req.body; // what datatype is this? (object)
     console.log(incomingData); // print incomingData
     res.render('result1', { data: incomingData }); // send data to view
+});
+
+app.post('/result2', (req, res) => {
+    const incomingData = req.body; // what datatype is this? (object)
+    console.log(incomingData); // print incomingData
+    let username = req.body.github;
+    axios.get(`https://api.github.com/users/${username}`)
+    .then(response => {
+        console.log(response.data); // print the data that comes back
+        const githubData = response.data;
+        res.render('result2', { githubData }); // send data to view
+    });
+    // res.render('result2', { githubData }); 
 });
 
 
