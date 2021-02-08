@@ -7,3 +7,7 @@ This is a review app of Express
 ![](https://user-images.githubusercontent.com/13144457/107281435-86e25b80-6a0e-11eb-9b56-14fc602db4b0.png)
 
 ![](https://user-images.githubusercontent.com/13144457/107283877-d5ddc000-6a11-11eb-83a7-e1e568267de9.png)
+
+## After Hitting `SUBMIT` on a FORM
+
+![](https://user-images.githubusercontent.com/13144457/107288519-6c14e480-6a18-11eb-99a3-51b9fa30ae78.png)

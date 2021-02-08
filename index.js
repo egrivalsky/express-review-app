@@ -44,15 +44,15 @@ app.get('/example1/:id', (req, res) => {
     res.render('example1', { paramsObject: req.params });
 });
 
-ap.get('result1', (req, res) => {
+app.get('result1', (req, res) => {
     res.render('result1');
 });
 
 // POST ROUTES
-app.post('/form1', (req, res) => {
+app.post('/result1', (req, res) => {
     const incomingData = req.body; // what datatype is this? (object)
     console.log(incomingData); // print incomingData
-    res.redirect('result1', { data: incomingData }); // send data to view
+    res.render('result1', { data: incomingData }); // send data to view
 });
 
 
