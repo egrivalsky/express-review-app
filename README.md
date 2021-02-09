@@ -38,3 +38,12 @@ createdb ga_league_development
 ```
 
 ![](https://user-images.githubusercontent.com/13144457/107309641-acd42400-6a3f-11eb-8bf6-3b5d6e262aa5.png)
+
+## Steps from Sequelize <=> Postgres 🐘
+1. Initialize Sequelize
+2. Update config.json [](https://user-images.githubusercontent.com/13144457/107309641-acd42400-6a3f-11eb-8bf6-3b5d6e262aa5.png)
+3. Create DB
+4. Create model (structure of table)
+5. Do migration (create table in DB)
+
+![](https://user-images.githubusercontent.com/13144457/107312789-122b1380-6a46-11eb-876e-2fc64796fffa.png)
