@@ -21,6 +21,10 @@ This is a review app of Express
 
 ![](https://user-images.githubusercontent.com/13144457/107296565-80f87480-6a26-11eb-8e40-c504d66ae3d8.png)
 
+## 🥷🏽 Add style to your Express App via Bootstrap, Material-UI, and/or style.css (your css)
+
+![](https://user-images.githubusercontent.com/13144457/107306384-a2af2700-6a39-11eb-8690-37ecbc73ea92.png)
+
 
 ## 🥷🏽 After Initialize Sequelize in your Express App
 
