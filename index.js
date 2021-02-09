@@ -32,7 +32,7 @@ app.get('/form2', (req, res) => {
     res.render('form2');
 });
 
-app.get('/github', (req, res) => {
+app.get('/rome', (req, res) => {
     axios.get('https://api.github.com/users/romebell')
     .then(response => {
         console.log(response.data); // What datatype is this? (object)
