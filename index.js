@@ -14,6 +14,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false })); // req.body, req.params, req.query
 app.use(methodOverride('_method'));
 app.use(ejsLayouts);
+app.use(express.static(__dirname + '/public'));
 
 // 5 - Route (controllers)
 app.get('/', (req, res) => {
@@ -46,6 +47,16 @@ app.get('/example1/:id', (req, res) => {
     // print the id
     console.log(req.params.id);
     res.render('example1', { paramsObject: req.params });
+});
+
+app.get('/players', (req, res) => {
+    // go to database and get all players from the players table in the ga_league database
+    db.player.findAll()
+    .then(allPlayers => {
+        // print allPlayer in the terminal
+        console.log(allPlayers); // what datatype is this? (array)
+        res.render('players', { players: allPlayers });
+    });
 });
 
 app.get('result1', (req, res) => {

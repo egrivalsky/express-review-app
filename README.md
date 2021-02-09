@@ -20,3 +20,17 @@ This is a review app of Express
 ## After Submitting Github Username (Axios)
 
 ![](https://user-images.githubusercontent.com/13144457/107296565-80f87480-6a26-11eb-8e40-c504d66ae3d8.png)
+
+
+## 🥷🏽 After Initialize Sequelize in your Express App
+
+```TEXT
+sequelize init
+```
+Update your config.json file [ADD LINK]()
+Create database
+```
+createdb ga_league_development
+```
+
+![](https://user-images.githubusercontent.com/13144457/107309641-acd42400-6a3f-11eb-8bf6-3b5d6e262aa5.png)
