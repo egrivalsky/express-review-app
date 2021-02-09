@@ -1,16 +1,16 @@
 {
   "development": {
-    "database": "review_development",
+    "database": "ga_league_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
-    "database": "review_test",
+    "database": "ga_league_test",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "database": "review_production",
+    "database": "ga_league_production",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
